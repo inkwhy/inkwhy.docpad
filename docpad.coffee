@@ -12,16 +12,14 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://whyink.com"
 
 			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+			oldUrls: [''
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Whyink.com"
 
 			# The website description (for SEO)
 			description: """
@@ -34,10 +32,10 @@ docpadConfig = {
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Inkwhy Inc"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "mike@inkwhy.com"
 
 			# Styles
 			styles: [
@@ -48,7 +46,7 @@ docpadConfig = {
 			# Scripts
 			scripts: [
 				"http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"
-				"/scripts/script.js"
+				"scripts/script.js"
 			]
 
 
