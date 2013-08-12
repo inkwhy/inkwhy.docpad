@@ -78,21 +78,24 @@ body .primary-button {
     }
     .second-circle-layer{
         margin: 0;
-        opacity: 0.8;
+        opacity: 0.84;
     }
     .second-circle-layer:hover{
-        opacity: 0.9;
+        opacity: 0.97;
     }
     .ad-layer{
         background: url(https://googledrive.com/host/0B9LVk4xbDIJTd3BaQ2Z6VHk2eHM/whitediamond.jpg); /* rgba(3, 71, 0, 0.13) */
     }
     .adspace-text{
         opacity: 0;
+        clear: both;
         color: #111;
         display: block;
-        padding: 0 13px;
+        padding: 22px 13px 0;
         text-align: center;
-        margin: 10px auto 0;
+    }
+    #sellAdspaceText{
+        color: #fff;
     }
     .publisher-layer{
         background: url(https://googledrive.com/host/0B9LVk4xbDIJTd3BaQ2Z6VHk2eHM/shattered-ice.jpg);
@@ -112,10 +115,14 @@ body .primary-button {
         background: transparent;
     }
     .splash-bg-image{
-        position: absolute;
         width: 50%;
         z-index: -1;
-        opacity: 0.44;
+        opacity: 0.84;
+        height: 828px;
+        position: absolute;
+    }
+    #splash-img-1{
+        height: 828px;
     }
     .splash .splash-head {
         font-size: 300%;
@@ -131,10 +138,12 @@ body .primary-button {
         font-size: 150%;
     }
     .home-slogan{
-        clear:both;
+        z-index: 2;
         color: #fff;
+        width: 100%;
         padding: 33px 0;
         text-align: center;
+        position: absolute;
         margin: -171px auto 0;
         background: rgba(0,0,0,0.5);
     }

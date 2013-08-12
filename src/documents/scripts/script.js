@@ -12,20 +12,50 @@ function(Y)
     // Tipsy render start <- 
 
 	// homepage section background events start ->
-	var buyAdspaceTitle = new Y.Anim({
-	    node: '#buyAdspaceTitle',
-	    to: {
-	    	marginTop: 125
-	    },
-	    duration: .2
-	});
-	var adspaceText = new Y.Anim({
-	    node: '.adspace-text',
-	    to: {
-	        opacity: 1
-	    },
-	    duration: .1
-	});
+	function adCircleAnim(title, text, circle){ // homepage circle hover animation start ->
+		var adspaceTitleOver = new Y.Anim({
+		    node: title,
+		    to: {
+		    	marginTop: 106
+		    },
+		    duration: .2
+		});
+		var adspaceTextOver = new Y.Anim({
+		    node: text,
+		    to: {
+		        opacity: 1
+		    },
+		    duration: .1
+		});
+		var adspaceTitleOut = new Y.Anim({
+		    node: title,
+		    to: {
+		    	marginTop: 142
+		    },
+		    duration: .2
+		});
+		var adspaceTextOut = new Y.Anim({
+		    node: text,
+		    to: {
+		        opacity: 0
+		    },
+		    duration: .1
+		});
+		Y.one(circle).on({
+			mouseover: function(){
+				adspaceTextOver.run();
+				adspaceTitleOver.run();
+			},
+			mouseout: function(){
+				adspaceTextOut.run();
+				adspaceTitleOut.run();
+			}
+		});
+	}
+	adCircleAnim('#buyAdspaceTitle','#buyAdspaceText', '.ad-layer');
+	adCircleAnim('#sellAdspaceTitle','#sellAdspaceText', '.publisher-layer');
+	// homepage circle hover animation end <-
+
 	Y.one('.splash-ad').on({
 		mouseover: function(){
 			Y.one('#splash-img-1').setStyle('opacity',1);
@@ -50,12 +80,6 @@ function(Y)
 		},
 		mouseout: function(){
 			Y.all('.splash-bg-image').setStyle('opacity','inherit');
-		}
-	})
-	Y.one('.ad-layer').on({
-		mouseover: function(){
-			adspaceText.run();
-			buyAdspaceTitle.run();
 		}
 	});
 	// homepage section background events end <-
@@ -85,6 +109,7 @@ function(Y)
 			Y.one('.publisher-layer').setStyle('z-index', '1');
 			publisherCircleAnim.run();
 			publisherLayerAnim.run();
+			Y.one('.publisher-layer').detach();
 		}
 	});
 	// homepage publisher circle animation end <-
@@ -112,7 +137,7 @@ function(Y)
 	});
 	Y.one('.ad-layer').on({
 		click: function(){
-			Y.one('#buyAdspaceTitle').setStyles({
+			Y.one('title').setStyles({
 				width: '77%',
 				textAlign: 'right'
 			});
@@ -120,6 +145,7 @@ function(Y)
 			Y.one('.splash-ad-circle').setStyle('position','absolute');
 			adCircleAnim.run();
 			adLayerAnim.run();
+			Y.one('.ad-layer').detach();
 		}
 	});
 	// homepage ad circle animation end <-
