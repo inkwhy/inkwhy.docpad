@@ -40,6 +40,9 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"http://yui.yahooapis.com/pure/0.2.0/pure-min.css"
+				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-widget-pointer/assets/gallery-widget-pointer-core.css"
+				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-tipsy/assets/skins/sam/gallery-tipsy.css"
+				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-popover/assets/skins/sam/gallery-popover-skin.css"		
 				"styles/style.css"
 			]
 

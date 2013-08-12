@@ -47,8 +47,10 @@
 <div class="content pure-g-r">
 	<div class="header pure-u-1">
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
-			<a class="pure-menu-heading" href="/">Inkwhy</a>
+			<a id="logo"class="pure-menu-heading" href="/">Inkwhy</a>
 			<a class="pure-button pure-menu-heading right" href="#">Login</a>
+			<br/>
+			<a class="pure-menu-heading right" href="#"><sup class="register-link">Register</sup></a>
 			<ul>
 				<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
@@ -61,8 +63,8 @@
 
 	<%- @content %>
 
-	<div class="footer pure-u-1" rel="tipsy" data-placement="above" data-content="Last updated at <%= @site.date.toISOString() %>">
-		&copy;<%- (new Date()).getFullYear() %> Inkwhy Inc.
+	<div class="footer pure-u-1">
+		<span rel="tipsy" data-placement="right" data-content="Last updated at <%= @site.date.toISOString() %>">&copy;<%- (new Date()).getFullYear() %> Inkwhy Inc.</a>
 	</div>
 </div>
 
