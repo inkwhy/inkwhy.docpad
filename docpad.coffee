@@ -23,12 +23,12 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				
 				"""
 
 			# The website author's name
@@ -43,6 +43,8 @@ docpadConfig = {
 				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-widget-pointer/assets/gallery-widget-pointer-core.css"
 				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-tipsy/assets/skins/sam/gallery-tipsy.css"
 				"http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-popover/assets/skins/sam/gallery-popover-skin.css"		
+				"http://fonts.googleapis.com/css?family=Arapey"
+				"http://fonts.googleapis.com/css?family=Open+Sans:400,700"
 				"styles/style.css"
 			]
 

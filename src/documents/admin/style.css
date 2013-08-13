@@ -1,0 +1,556 @@
+body{
+    margin:0;
+    color:#606466;
+    font-size:16px;
+    font-family:arial;
+    transition:all .2s ease;
+    -o-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+}
+
+::-webkit-scrollbar{width:17px;background:#fff;}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb{background:rgb(170,179,188);background:rgba(170,179,188,0.2);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);-moz-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb:window-inactive,::-webkit-scrollbar-track:window-inactive{
+    background:transparent;
+    -moz-box-shadow:inset 0 0 6px rgba(0,0,0,0);
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0);
+    box-shadow:inset 0 0 6px rgba(0,0,0,0);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    margin:0;
+}
+
+header{
+    height:133px;
+}
+
+a{
+    cursor:default;
+    color:inherit;
+    text-decoration:none;
+}
+
+::selection {
+    background: #242421; /* Safari */
+    color:#fff;
+}
+::-moz-selection {
+    background: #242421; /* Firefox */
+    color:#fff;
+}
+
+.clear{
+    clear:both;
+}
+
+#inky{
+    position:absolute;
+    display:none;
+}
+
+.orange{
+    color:#ff9900;
+}
+
+.logo{
+    font-family: 'Arapey', serif;
+    
+}
+    #logo{
+        font-size: 27px;
+    }
+    #logo,#user,#basicImg, #basicURL{
+        cursor:pointer;
+    }
+    .inkwhyLogo {
+        background: url('http://373.be/sprites_inkwhy.png') no-repeat -2px -138px;
+        width: 208px;
+        height: 72px;
+        float:left;
+        margin: 13px 0 0 33px;
+    }
+    .adInkLogo{
+        background: url('http://373.be/sprites_inkwhy.png') no-repeat -220px -137px;
+        width: 216px;
+        height: 64px;
+        float:left;
+        margin: 13px 0 0 33px;
+    }
+
+.pageName{
+    float:left;
+    margin: 33px 0 0 21px;
+}
+
+.closeTip{
+    height:16px;
+    cursor:pointer;
+    position:absolute;
+    border:1px solid #CCC;
+    margin:-24px 0 0 720px;
+}
+
+.username{
+    float:right;
+    margin: 33px 77px 0 0;
+}
+
+.userdrop{
+    opacity:0;
+    clear: both;
+    font-size:14px;
+    list-style:none;
+    margin:57px 0 0 -76px;
+}
+
+.userdrop li{
+    width:73px;
+    margin:3px 0;
+    padding:3px 7px;
+    background:#fff;
+}
+
+.userdrop li:hover{
+    border: 1px solid #CCC;
+}
+
+#user{
+    width: 111px;
+    float: right;
+}
+
+.settings-panel{
+    width: 100%;
+    height: 100%;
+    background:rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+}
+.settings-panel:hover{
+    background:#fff;
+}
+
+.gear{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -492px -167px;
+    width: 15px;
+    height: 15px;
+    float:right;
+    margin: 35px -93px 0 0;
+}
+
+.squareFill{
+    opacity:0.9;
+    background:#BDC6CB url('http://373.be/sprites_inkwhy.png') no-repeat 0 -1px;
+}
+.squareFill:hover{
+    opacity:1;
+}
+
+.boxBorder{
+    cursor:pointer;
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -273px -1px;
+    /*  border: 3px solid #BDC6CB; */
+}
+
+.blackBorder{
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.3);
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -136px -1px;
+    /* border: 3px solid #423934; */
+}
+
+.boxCross{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -410px -1px;
+    /*  border: 3px solid #BDC6CB; */
+}
+
+.boxRow{
+    width:778px;
+    height:134px;
+    margin:0 auto;
+}
+
+.box{
+    float:left;
+    opacity:0.9;
+    width: 134px;
+    height: 134px;
+    display:table;
+    text-align: center;
+    margin:111px 0 0 27px;
+    -webkit-box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    /*  box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; */
+}
+
+.box:first-child{
+    margin: 111px 0 0 0;
+}
+
+.box p{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+#boxtip{
+    width:699px;
+    height:33px;
+    opacity:0.9;
+    border:1px solid #C0C5C9;
+    padding:23px 33px 45px 33px;
+    margin:0 auto -26px auto;
+    transition:0;
+    -o-transition:0;
+    -moz-transition:0;
+    -webkit-transition:0;
+}
+
+#holder {
+    z-index:-1;
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.boxoff{
+    opacity:0.6;
+    -moz-box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.1);
+}
+.boxoff:hover, .boxBorder:hover{
+    opacity:1;
+    -moz-box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:1px 1px 19px 1px rgba(0, 0, 0, 0.3);
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -136px -1px;
+}
+
+.boxtitle{
+    width:134px;
+    position:absolute;
+    margin:-19px 0 0 0;
+    background:#fff;
+    background:rgba(255, 255, 255, 0.7);
+}
+
+#box5{
+    opacity:0.9;
+}
+#box5:hover{
+    opacity:1;
+}
+
+.editRowIcon{
+    display: block;
+    margin: 7px auto;
+    width: 62px;
+    height: 62px;
+}
+
+.adInkIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -220px -137px;
+    width: 64px;
+    height: 64px;
+}
+
+.creditIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -840px -71px;
+}
+
+.editIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -910px -138px;
+    margin: 0 0 11px 44px;
+}
+
+.newAdInkIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -838px -1px;
+    width:64px;
+    height: 65px;
+}
+
+.infoIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -690px -71px;
+    width: 62px;
+    height: 62px;
+}
+
+.playIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -547px -71px;
+    width: 62px;
+    height: 62px;
+}
+
+.playIconGreen{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -619px -71px;
+    width: 62px;
+    height: 62px;
+}
+
+.periodIcon{
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -618px -2px;
+    width: 62px;
+    height: 62px;
+}
+
+#box1copy2{
+    color:#34af00;
+    display:none;
+}
+
+.green{
+    color:#34af00;
+}
+
+.reportIcon{
+    width:55px;
+    height:58px;
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -772px -71px;
+}
+
+.spaceIcon{
+    width:57px;
+    height:57px;
+    margin:0 0 0 40px;
+    background: url('http://373.be/sprites_inkwhy.png') no-repeat -908px -76px;
+}
+
+.P3Icon{
+    width:63px;
+    height:63px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -689px -2px;
+
+}
+
+.sellIcon{
+    width:55px;
+    height:55px;
+    background:#6F7478;
+}
+
+.blockicon{
+    float: left;
+    width:55px;
+    color:white;
+    font-size:28px;
+    margin:12px auto 0 auto;
+}
+
+.basicIcon{
+    width:55px;
+    height:55px;
+    background:#6F7478;
+}
+
+#box2copy2, #box3copy2, #box4copy2, #box1copy3, #box2copy3, #box3copy3, #box4copy3, #quanInput, #basicHTMLinput{
+    display:none;
+}
+
+#box4copy2{
+    margin:8px 0 -8px 0;
+}
+
+.chooseAdInkCopy{
+    float:left;
+    width:244px;
+    display:block;
+    margin:64px auto 0 77px;
+}
+
+.circleBg{
+    width:55px;
+    height:55px;
+    background:#6F7478;
+    border-radius:190px;
+}
+
+.chooseAdInkLines{
+    width:320px;
+    height:65px;
+    margin:-76px auto 0 auto;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -564px -138px;
+}
+
+.greenCheckIcon{
+    width:19px;
+    height:19px;
+    position:absolute;
+    margin:35px 0 0 7px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -443px -193px;
+}
+
+.penIcon{
+    float:left;
+    width:17px;
+    height:17px;
+    display:block;
+    padding:0 0 0 22px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -445px -167px;
+}
+
+.picIcon{
+    float:left;
+    width:20px;
+    height:15px;
+    display:block;
+    padding:0 0 0 27px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -511px -167px;
+}
+
+.creditIconSmall{
+    float:left;
+    width:72px;
+    height:19px;
+    display:block;
+    padding:0 0 0 23px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -445px -140px;
+}
+
+.netIconSmall{
+    float:left;
+    width:20px;
+    height:20px;
+    display:block;
+    padding:0 0 0 23px;
+    background:url('http://373.be/sprites_inkwhy.png') no-repeat -521px -192px;
+}
+
+.smallFont{
+    font-size:14px;
+}
+
+input, textarea {
+    border:0;
+    color:#fff;
+    width:340px;
+    outline:none;
+    margin-top:8px;
+    font-size:16px;
+    padding:12px 10px;
+    background:#554c43;
+    -moz-box-shadow:0 1px 0 #444;
+    -webkit-box-shadow:0 1px 0 #444;
+    box-shadow:0 1px 0 #444;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    font-size: 13px;
+}
+
+.radius2 {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.newP3fields, .newPeriodFields, .newSellfields, .newBasicfields{
+    width: 805px;
+    margin: 0 auto;
+}
+
+.leftField{
+    width: 340px;
+    float:left;
+    margin:0 0 66px 28px;
+}
+
+.rightField{
+    width: 340px;
+    float: right;
+    margin:0 20px 22px 0;
+
+}
+
+.creditField{
+    margin:0px 20px 0 0;
+}
+
+input[type=checkbox]{
+    width:initial;
+}
+#backupAd,#repeatSched{
+    float:left;
+    font-size: 13px;
+    margin: -3px 0 0 0;
+}
+#scriptP3{
+    font-size: 13px;
+    color: #CCC;
+}
+
+.playFields{
+    padding: 77px 0;
+}
+#content{
+    padding: 77px 0;
+}
+#basicImgCheck{
+    float: left;
+    margin: 3px 0 0 39px;
+}
+#basicURLCheck{
+    float: left;
+    margin: 3px 0 0 21px;
+}
+#basicDescCheck{
+    float: right;
+    margin: 3px -17px 0 0;
+}
+#basicDescShow{
+    float: right;
+}
+
+.yui3-calendar-header-label{
+    width:inherit !important;
+    padding: 3px 7px;
+}
+
+.yui3-calendarnav-nextmonth, .yui3-calendarnav-prevmonth{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.yui3-calendar-prevmonth-day, .yui3-calendar-nextmonth-day{
+    opacity:0.6;
+}
+
+.yui3-calendar{
+    margin: 0 auto;
+}
+
+.yui3-calendar-grid{
+    border-collapse: collapse !important;
+}
+
+.yui3-calendar-grid td{
+    width: 14%;
+    height: 101px;
+    border: 4px solid;
+    text-align: center;
+}
+
+@media only screen and ( max-width: 767px ) {
+    #wrapper{width:780px;}
+    .boxRow{width:479px;}
+    .box{margin: 33px 0 0 27px;}
+}
+
+@media only screen and ( max-width: 479px ) {
+    #wrapper{width:480px;}
+    .boxRow{width:479px;}
+    .box{margin: 33px 0 0 27px;}
+
+}

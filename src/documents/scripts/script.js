@@ -30,7 +30,7 @@ function(Y)
 		var adspaceTitleOut = new Y.Anim({
 		    node: title,
 		    to: {
-		    	marginTop: 142
+		    	marginTop: 136
 		    },
 		    duration: .2
 		});
@@ -58,19 +58,23 @@ function(Y)
 
 	Y.one('.splash-ad').on({
 		mouseover: function(){
+			Y.one('#adSub').setStyle('opacity',0.55);
 			Y.one('#splash-img-1').setStyle('opacity',1);
 			Y.one('#splash-img-2').setStyle('opacity',0.44);
 		},
 		mouseout: function(){
+			Y.one('#adSub').setStyle('opacity',0);
 			Y.one('#splash-img-1').setStyle('opacity',0.44);
 		}
 	});
 	Y.one('.splash-publisher').on({
 		mouseover: function(){
+			Y.one('#pubSub').setStyle('opacity',0.81);
 			Y.one('#splash-img-2').setStyle('opacity',1);
 			Y.one('#splash-img-1').setStyle('opacity',0.44);
 		},
 		mouseout: function(){
+			Y.one('#pubSub').setStyle('opacity',0);
 			Y.one('#splash-img-2').setStyle('opacity',0.44);
 		}
 	});

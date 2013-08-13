@@ -1,6 +1,11 @@
 body {
     margin: 0 auto;
     line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
 }
 
 a, a:hover, a:active{color:inherit;}
@@ -26,9 +31,18 @@ a, a:hover, a:active{color:inherit;}
 .left{
     float: left;
 }
+.center{
+    text-align: center;
+}
 
 .l-box {
     padding: 1em;
+}
+.circle-sub{
+    width: 328px;
+    display: block;
+    opacity: 0;
+    margin: 45px 0;
 }
 
 .pure-menu.pure-menu-open.pure-menu-fixed{
@@ -43,6 +57,14 @@ a, a:hover, a:active{color:inherit;}
 .header {
     margin: 0 0;
 }
+
+    .logo{
+        font-family: 'Arapey', serif;
+        
+    }
+    #logo{
+        font-size: 27px;
+    }
 
     .header .pure-menu {
         padding: 0.5em;
@@ -91,7 +113,7 @@ body .primary-button {
         clear: both;
         color: #111;
         display: block;
-        padding: 22px 13px 0;
+        padding: 13px 13px 0;
         text-align: center;
     }
     #sellAdspaceText{
@@ -102,8 +124,9 @@ body .primary-button {
     }
     .splash-title{
         z-index: 2;
+        line-height: 34px;
         text-align: center;
-        margin: 142px 82px 0;
+        margin: 136px 94px 0;
     }
     .white{
         color: #fff;
@@ -148,7 +171,9 @@ body .primary-button {
         background: rgba(0,0,0,0.5);
     }
     .register-link{
-        margin: 0 -2px 0 0;
+        position: absolute;
+        right: 25px;
+        top: 50px;
     }
 
 
