@@ -86,6 +86,18 @@ function(Y)
 			Y.all('.splash-bg-image').setStyle('opacity','inherit');
 		}
 	});
+	Y.one('.login-btn').on({
+		click: function(){
+			Y.one('.login-popover').toggleClass('opacity1');
+			Y.one('.register-link').toggleClass('opacity1');
+		}
+	});
+	Y.one('.register-link').on({
+		click: function(){
+			Y.one('.login-popover').toggleClass('opacity1');
+			Y.one('.register-link').toggleClass('opacity1');
+		}
+	})
 	// homepage section background events end <-
 
 	// homepage publisher circle animation start -> 

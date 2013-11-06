@@ -48,7 +48,7 @@
 	<div class="header pure-u-1">
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
 			<a id="logo" class="logo pure-menu-heading" href="/">inkwhy</a>
-			<a class="pure-button pure-menu-heading right" href="#">Login</a>
+			<a class="pure-button login-btn pure-menu-heading right" href="#login">Login</a>
 			<br/>
 			<a class="pure-menu-heading right" href="#"><sup class="register-link">Register</sup></a>
 			<ul>
@@ -61,6 +61,13 @@
 		</div>
 	</div>
 
+	<div class="main pure-g-r">
+	<div class="animated login-popover pure-u-1">
+		<div class="login-popover-content pure-u-1-4">
+			<iframe class="login-embed" src="http://whyink.com/login"> </iframe>
+			<iframe class="register-embed" src="http://whyink.com/register"> </iframe>
+		</div>
+	</div> 
 	<%- @content %>
 
 	<div class="footer pure-u-1">
