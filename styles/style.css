@@ -1,0 +1,251 @@
+body {
+    margin: 0 auto;
+    line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+}
+
+a, a:hover, a:active{color:inherit;}
+
+::-moz-selection{background:#5af;color:#fff;text-shadow:none}
+::selection{background:#5af;color:#fff;text-shadow:none}
+::-webkit-scrollbar{width:17px;background:#fcfcfc}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2)}
+::-webkit-scrollbar-thumb{background:rgba(102,51,0,0.2) url(https://googledrive.com/host/0B9LVk4xbDIJTU0FvQll6RWlCNnM/ticks.png);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2)}
+::-webkit-scrollbar-thumb:window-inactive{background:rgba(216,210,206,0.3)}
+
+.pure-menu-heading{
+    text-transform:none !important;
+}
+
+.main{
+    margin: 0;
+    height: 828px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.center{
+    text-align: center;
+}
+
+.l-box {
+    padding: 1em;
+}
+.circle-sub{
+    width: 328px;
+    display: block;
+    opacity: 0;
+    margin: 45px 0;
+}
+
+.animated{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed{
+    background: transparent;
+    border:0;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.header {
+    margin: 0 0;
+}
+
+    .logo{
+        z-index: 3;
+        font-family: 'Arapey', serif;
+    }
+    #logo{
+        font-size: 27px;
+    }
+
+    .header .pure-menu {
+        padding: 0.5em;
+    }
+
+        .header .pure-menu li a:hover,
+        .header .pure-menu li a:focus {
+            color: #aaa;
+            border: none;
+            background: none;
+        }
+
+body .primary-button {
+    color: #fff;
+    background: #02a6eb;
+}
+
+.login-popover{
+    background: #fff; /*rgba(255,255,255,1) */
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    margin: 7% 0 0 0;
+    text-align: center;
+    height: 0%;
+    width: 100%;
+}
+    .login-popover-content{
+        padding: 77px 0 77px 77px;
+    }
+    .login-popover-content, .login-embed, .register-embed{
+        min-height: 100%;
+        height: 100%;
+        border:0;
+    }
+    .register-embed{
+        opacity: 0;
+    }
+.opacity0{
+        opacity: 0;
+    }
+    .opacity1{
+        opacity: 1;
+        height: 100%;
+    }
+
+.splash {
+    background: #eee;
+    margin: 2em auto 0;
+    padding: 3em 0.5em;
+}
+    .splash-circle{
+        width: 333px;
+        height: 333px;
+        background: #000;  
+        margin: 29% 22%;
+        border-radius: 172px;
+    }
+    .second-circle{
+        float: right;
+        margin: 0 111px 0;
+    }
+    .second-circle-layer{
+        margin: 0;
+        opacity: 0.84;
+    }
+    .second-circle-layer:hover{
+        opacity: 0.97;
+    }
+    .ad-layer{
+        background: url(https://googledrive.com/host/0B9LVk4xbDIJTd3BaQ2Z6VHk2eHM/whitediamond.jpg); /* rgba(3, 71, 0, 0.13) */
+    }
+    .adspace-text{
+        opacity: 0;
+        clear: both;
+        color: #111;
+        display: block;
+        padding: 13px 13px 0;
+        text-align: center;
+    }
+    #sellAdspaceText{
+        color: #fff;
+    }
+    .publisher-layer{
+        background: url(https://googledrive.com/host/0B9LVk4xbDIJTd3BaQ2Z6VHk2eHM/shattered-ice.jpg);
+    }
+    .splash-title{
+        z-index: 2;
+        line-height: 34px;
+        text-align: center;
+        margin: 136px 94px 0;
+    }
+    .white{
+        color: #fff;
+    }
+    .splash-ad-circle{
+        background: transparent;
+    }
+    .splash-publisher-circle{
+        background: transparent;
+    }
+    .splash-bg-image{
+        width: 50%;
+        z-index: -1;
+        opacity: 0.84;
+        position: absolute;
+    }
+    #splash-img-1{
+    }
+    .splash .splash-head {
+        font-size: 300%;
+        margin: 0em 0;
+        line-height: 1.2em;
+    }
+    .splash .splash-subhead {
+        color: #999;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    .splash .primary-button {
+        font-size: 150%;
+    }
+    .home-slogan{
+        z-index: 2;
+        color: #fff;
+        width: 100%;
+        padding: 77px 0;
+        text-align: center;
+        margin: -143px auto 0;
+        background: rgba(0,0,0,0.5);
+    }
+    .register-link{
+        position: absolute;
+        right: 25px;
+        top: 50px;
+    }
+
+
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+
+.ribbon {
+    background: #eee;
+    text-align: center;
+    padding: 2em;
+    color: #999;
+}
+    .ribbon h2 {
+        display: inline;
+        font-weight: normal;
+    }
+
+.footer {
+    background: #111;
+    color: #666;
+    text-align: center;
+    padding: 1em 1em 7em;
+    font-size: 80%;
+}
+.show{
+    display: relative;
+}
+.hide{
+    display: none;
+}

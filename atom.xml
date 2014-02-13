@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Whyink.com</title>
+	<link href="http://whyink.com/atom.xml" rel="self"/>
+	<link href="http://whyink.com"/>
+	<updated>2014-02-13T20:32:38.286Z</updated>
+	<id>http://whyink.com</id>
+	<author>
+		<name>Inkwhy Inc</name>
+		<email>mike@inkwhy.com</email>
+	</author>
+
+	
+</feed>
