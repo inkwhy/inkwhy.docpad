@@ -42,11 +42,11 @@ function(Y)
 		    duration: .1
 		});
 		Y.one(circle).on({
-			mouseover: function(){
+			mouseenter: function(){
 				adspaceTextOver.run();
 				adspaceTitleOver.run();
 			},
-			mouseout: function(){
+			mouseleave: function(){
 				adspaceTextOut.run();
 				adspaceTitleOut.run();
 			}
@@ -57,32 +57,32 @@ function(Y)
 	// homepage circle hover animation end <-
 
 	Y.one('.splash-ad').on({
-		mouseover: function(){
+		mouseenter: function(){
 			Y.one('#adSub').setStyle('opacity',0.55);
 			Y.one('#splash-img-1').setStyle('opacity',1);
 			Y.one('#splash-img-2').setStyle('opacity',0.44);
 		},
-		mouseout: function(){
+		mouseleave: function(){
 			Y.one('#adSub').setStyle('opacity',0);
 			Y.one('#splash-img-1').setStyle('opacity',0.44);
 		}
 	});
 	Y.one('.splash-publisher').on({
-		mouseover: function(){
+		mouseenter: function(){
 			Y.one('#pubSub').setStyle('opacity',0.81);
 			Y.one('#splash-img-2').setStyle('opacity',1);
 			Y.one('#splash-img-1').setStyle('opacity',0.44);
 		},
-		mouseout: function(){
+		mouseleave: function(){
 			Y.one('#pubSub').setStyle('opacity',0);
 			Y.one('#splash-img-2').setStyle('opacity',0.44);
 		}
 	});
 	Y.one('.home-slogan').on({
-		mouseover: function(){
+		mouseenter: function(){
 			Y.all('.splash-bg-image').setStyle('opacity',1);
 		},
-		mouseout: function(){
+		mouseleave: function(){
 			Y.all('.splash-bg-image').setStyle('opacity','inherit');
 		}
 	});

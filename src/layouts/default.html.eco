@@ -71,6 +71,7 @@
 	<%- @content %>
 
 	<div class="footer pure-u-1">
+        <br/><br/><br/>
 		<span rel="tipsy" data-placement="right" data-content="Last updated at <%= @site.date.toISOString() %>">&copy;<%- (new Date()).getFullYear() %> Inkwhy Inc.</a>
 	</div>
 </div>
